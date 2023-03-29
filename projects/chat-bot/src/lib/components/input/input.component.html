@@ -1,0 +1,11 @@
+<form [formGroup]="textAreaForm">
+  <textarea
+    cols="64"
+    rows="3"
+    class="text-area"
+    formControlName="userUtterance"
+    #userUtterance></textarea>
+</form>
+<button type="submit" class="chat-input-submit" (click)="onSubmit()">
+  {{ buttonText }}
+</button>

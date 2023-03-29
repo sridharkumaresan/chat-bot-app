@@ -1,0 +1,13 @@
+<article class="oui-chat-widget">
+  <section class="oui-chat-widget__chat-box">
+    <div class="oui-chat-widget__chat-box__header"></div>
+    <div class="oui-chat-widget__chat-box__body">
+      <ng-container *ngFor="let message of messageList">
+        <oui-message [message]="message"></oui-message>
+      </ng-container>
+    </div>
+    <div class="oui-chat-widget__chat-box__footer">
+      <oui-input (userUtterance)="sendMessage($event)"></oui-input>
+    </div>
+  </section>
+</article>
